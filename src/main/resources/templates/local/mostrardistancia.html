@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<meta charset="UTF-8">
+<title>Mostrar Distancia</title>
+</head>
+<body>
+<div id="agregarTitulo">
+<h1>
+<a id="unla" href="/index">UNLa</a> 
+Mostrar Distancia
+</h1>
+</div>
+<div class="card bg-light col-md-7 mt-5 p-3 mx-auto">
+<form action="s#" th:action="@{/local/scardistancia}" method="post">
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Local "A"</label>
+     <input type="text" class="form-control" th:text="${lat1}" id="dato">
+  </div>
+      <div class="form-group">
+    <label for="exampleFormControlSelect1">Local "B"</label>
+    <input type="text" class="form-control" th:text="${lat2}" id="dato">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Distancia en Km.</label>
+    <input type="text" class="form-control" th:field="*{distancia}" id="dato">
+  </div>
+</form>
+<form action="#" th:action="@{/local/back}" method="post">
+	<button type="submit" class="btn btn-dark">Volver</button>
+</form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+#boton {
+	background-color: dark;
+	border: none;
+	color: darkgrey;
+}
+
+.table{
+	margin-top: 10px;
+}
+
+#header{
+	margin-left: 40%;
+}
+
+#agregarTitulo{
+	margin-top: 10px;
+	margin-left: 40%;
+}
+
+#unla{
+	color: black;
+	float: left;
+	text-decoration: none;
+}
+
+button{
+	margin-top: 5px;
+}
